@@ -5,7 +5,7 @@ name: Python application
 
 on:
   schedule:
-    - cron: '30 7,11,15,19,20 * * *' #runs at 00:00 UTC everyday
+    - cron: '40 7,11,15,19,20 * * *' #runs at 00:00 UTC everyday
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.10
-      uses: actions/setup-python@v2
+    - uses: actions/setup-python@v2
       with:
         python-version: "3.10"
         cache: 'pip'
