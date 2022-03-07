@@ -5,7 +5,7 @@ name: Python application
 
 on:
   schedule:
-    - cron: '50 * * * *' #runs at 00:00 UTC everyday
+    - cron: '05 * * * *' #runs at 00:00 UTC everyday
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pandas
         pip install sys
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run network script
       run: |
         python network.py
