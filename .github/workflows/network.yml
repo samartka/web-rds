@@ -5,7 +5,7 @@ name: Get network data
 
 on:
   schedule:
-    - cron: '0 * * * *' #runs at 00:00 UTC everyday
+    - cron: '40 * * * *' #runs at 00:00 UTC everyday
 
 jobs:
   build:
@@ -25,3 +25,6 @@ jobs:
     - name: Run network script
       run: |
         python network.py
+    - name: List files
+      run: |
+        ls -R
