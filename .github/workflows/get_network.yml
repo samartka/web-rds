@@ -5,7 +5,7 @@ name: Python application
 
 on:
   schedule:
-    - cron: '42,50 7,11,15,19,20 * * *' #runs at 00:00 UTC everyday
+    - cron: '50 * * * *' #runs at 00:00 UTC everyday
 
 jobs:
   build:
