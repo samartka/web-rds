@@ -1,1 +1,1 @@
-[![Python application](https://github.com/samartka/web-rds/actions/workflows/get_network.yml/badge.svg)](https://github.com/samartka/web-rds/actions/workflows/get_network.yml)
+[![Get network data](https://github.com/samartka/web-rds/actions/workflows/network.yml/badge.svg)](https://github.com/samartka/web-rds/actions/workflows/network.yml)
