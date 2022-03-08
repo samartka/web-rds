@@ -4,8 +4,8 @@ import sys
 x=1500
 sys.setrecursionlimit(x)
 
+df = pd.read_json("https://kainoi.net/getdata.php?tb=tbcoupon")
 
-df = pd.read_json("https://kainoi.net/getdata.php?tbcoupon")
 df['wave'] = 0
 df['seed_init'] = ''
 df['chain'] = ''
